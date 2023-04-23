@@ -1,6 +1,13 @@
 <h1> Photos </h1>
 <%# collections: @items come from the items_controller %>
 
+<%# name = "q" because in controller we have params[:q] %>
+
+<form action="">
+    <input type="text" name="q" value="<%=params[:q]%>">
+</form>
+
+
 <div class ="items-grid">
     <%= render partial: "item", collection: @items %>
 </div>
