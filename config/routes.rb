@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   # categories controller 
   resources :categories
   
+  resource :account
+  
   resources :items
   
   resources :users
