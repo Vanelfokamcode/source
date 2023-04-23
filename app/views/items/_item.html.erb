@@ -2,6 +2,6 @@
 <%= link_to item_path(item) do %>
     <div class = "item">
         <h2><%= item.title %></h2>
-        <%= image_tag item.image %>
+        <%= image_tag item.image, style: "width: 550px; height: 350px;"  %>
     </div>
 <% end %>

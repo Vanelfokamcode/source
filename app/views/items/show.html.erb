@@ -1,6 +1,6 @@
 <h1> <%= @item.title %> <h1>
 
-<%= image_tag @item.image %>
+<%= image_tag @item.image,style: "width: 500px; height: 500px;" %>
 
 <p>
     <%= link_to "Download", @item.image, download: true %>
