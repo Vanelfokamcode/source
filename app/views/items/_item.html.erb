@@ -1,0 +1,7 @@
+<%# item from the _item.html.erb partial name %>
+<%= link_to item_path(item) do %>
+    <div class = "item">
+        <h2><%= item.title %></h2>
+        <%= image_tag item.image %>
+    </div>
+<% end %>
